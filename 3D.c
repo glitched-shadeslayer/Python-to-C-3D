@@ -11,11 +11,11 @@ int m,n;//integers
 double **A,**B,**crossB,k, r, **O, **crossprod;
 
 //Given points
-A = loadtxt("./data/A.dat",3,1);
-B = loadtxt("./data/B.dat",3,1);
+A = loadtxt("./A.dat",3,1);
+B = loadtxt("./B.dat",3,1);
 
 //Matrix for cross product
-crossB= loadtxt("./data/crossB.dat",3,3);
+crossB= loadtxt("./crossB.dat",3,3);
 
 //To calculate the constant k
 O = matmul(transpose(B,3,1),A,1,3,1);
